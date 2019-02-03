@@ -261,6 +261,9 @@ footer p {
     flex-direction: column;
     height: 100%;
   }
+  .block:nth-child(even) {
+    flex-direction: column;
+  }
   .blocks h2 {
     font-size: 5.5vw;
     padding-left: 20px;
