@@ -1,0 +1,87 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+	text-align: center;
+	margin: 25px;
+}
+
+.newApplication .todo-header {
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 30px;
+	margin-top: 20px;
+}
+
+.todo-application {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.newApplication {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	border-radius: 10px;
+	padding: 5px 20px 5px 20px;
+}
+
+.add-task-button {
+	margin: 15px;
+	font-size: 20px;
+}
+
+input {
+	border-radius: 5px;
+	margin-bottom: 15px;
+	width: 300px;
+	height: 40px;
+}
+
+.saveChangesBtn {
+	font-size: 15px;
+}
+
+.cancelBtn {
+	margin-left: 75px;
+	font-size: 15px;
+}
+
+.todo-list {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.list-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 280px;
+	margin-top: 20px;
+}
+
+.check-btn,
+.delete-btn {
+	background: none;
+	border: none;
+}
+
+span {
+	font-size: 30px;
+}
