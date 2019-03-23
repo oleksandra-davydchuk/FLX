@@ -2,7 +2,7 @@ function Company({
   name,
   owner,
   maxCount
-} = {}) {
+}) {
   this.name = name;
   this.owner = owner;
   this.maxCount = maxCount;
@@ -80,7 +80,7 @@ function Employee({
   age,
   salary,
   primarySkill
-} = {}) {
+}) {
   this.name = name;
   this.age = age;
   this.salary = salary;
