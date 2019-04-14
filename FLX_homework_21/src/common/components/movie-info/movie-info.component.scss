@@ -1,0 +1,31 @@
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    img {
+      max-height: 400px;
+    }
+  
+    p {
+      margin: 5px 0;
+    }
+  
+    a {
+      background-color: #f2efe9;
+      color: #0d0c08;
+      display: block;
+      padding: 10px 15px;
+      border-radius: 35px;
+      border: 2px solid #a09c9c;
+    }
+  }
+  
+  .movie-overview {
+    width: 500px;
+    text-indent: 15px;
+    text-align: center;
+    
+  }
+ 
