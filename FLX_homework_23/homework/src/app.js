@@ -15,17 +15,24 @@ class User {
   
   function getDiscount(user) {
     let date = new Date();
-    if (date.getHours() >= 23 || date.getHours() <= 6) {
-      user.discount = user.nightDiscount;
-      user.weekendDiscount = 0;
-      return `Congratulations! You have night discount ${user.discount} uah.`;
+    if (date.getHours() >= 23 || date.getHours() <= 6 && date.getDay() === 6 || date.getDay() === 0) {
+      if (user.weekendDiscount > user.nightDiscount) {
+        return `Congratlations! You have discount ${user.weekendDiscount} uah.`;
+      } else if (user.weekendDiscount < user.nightDiscount) {
+        return `Congratlations! You have discount ${user.nightDiscount} uah.`;
+      } else {
+        return `Congratlations! You have discount ${user.nightDiscount || user.weekendDiscount} uah.`;
+      }
     } else if (date.getDay() === 6 || date.getDay() === 0) {
       user.discount = user.weekendDiscount;
       user.nightDiscount = 0;
       return `Congratulations! You have weekend discount ${user.discount} uah.`;
-    } else {
+    } else if (date.getHours() >= 23 || date.getHours() <= 6) {
+      user.discount = user.nightDiscount;
       user.weekendDiscount = 0;
-      user.nightDiscount = 0;
+      return `Congratulations! You have night discount ${user.discount} uah.`;
+    } else {
+      return `Sorry, you can have discount only on weekends or at night time(23:00 - 6:00).`;
     }
   }
   
