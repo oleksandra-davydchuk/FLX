@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="./scss/styles.scss"> -->
+    <title>Rock, paper, scissors game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1> Let's play rock, paper, scissors game!</h1>
+      <img class="main-img" src="./img/rock_paper_scissors.gif">
+      <h3>Rules:</h3>
+      <p>Scissors beats a paper.<br>
+        Paper beats a rock.<br>
+        Rock beats a scissors.<br>
+        And we play up to 3 rounds.<br>
+        Good luck!
+      </p>
+      <div>
+        <input type="image" name="rock" title="Rock" src="./img/rock.png" class="rock-btn btn" cursor="pointer">
+        <input type="image" name="paper" title="Paper" src="./img/paper.png" class="paper-btn btn" cursor="pointer">
+        <input type="image" name="scissors" title="Scissors" src="./img/scissors.png" class="scissors-btn btn" cursor="pointer">
+      </div>
+      <div class="round-information"></div>
+      <div class="final-winner bold-text"></div>
+      <button class="reset-game" cursor="default">Reset game</button>
+    </div>
+    <script src="./js/bundle.js"></script>
+  </body>
+</html>
