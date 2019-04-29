@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+$turqoise: #26a69a;
+$red: #E57373;
+$gray: #f8f8f8;
+$white: #fff;
+
+$shadow:
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12),
+    0 1px 5px 0 rgba(0, 0, 0, 0.2);
+
+    .root {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+    }
+    
+    .searchForm {
+        border-bottom: 3px solid $gray;
+        height: 35px;
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        .searchInput {
+            margin-left: 5px;
+            border: none;
+            border-bottom: 1px solid black;
+            width: 130px;
+        }
+    }
+    
+    .usersTable {
+        width: 92%;
+        margin-left: 4%;
+        margin-right: 4%;
+        text-align: left;
+        margin-top: 20px;
+        border-collapse: collapse;
+        border: none;
+        th {
+            background-color: $turqoise;
+            color: $white;
+            height: 40px;
+            padding-left: 12px;
+        }
+        td {
+            height: 150px;
+            padding-left: 12px;
+        }
+        tr:nth-child(odd) {
+            background-color: $gray;
+        }
+    }
+    
+    th.usersName {
+        width: 120px;
+    }
+    
+    th.usersAddress {
+        width: 150px;
+    }
+    
+    .removeButton {
+        background-color: $red;
+        color: $white;
+        height: 28px;
+        width: 75px;
+    }
+    
+    .noUsers {
+        color: $red;
+        font-size: 25px;
+        text-align: center;
+        background-color: $white;
+    }
+    
+    .loadMore {
+        margin-top: 30px;
+        border-top: 3px solid $gray;
+        text-align: center;
+    }
+    
+    .loadMoreButton {
+        height: 35px;
+        width: 370px;
+        border: none;
+        background-color: $gray;
+        border-radius: 15px;
+        box-shadow: $shadow;
+    }
