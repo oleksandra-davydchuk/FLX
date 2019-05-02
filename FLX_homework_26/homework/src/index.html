@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FLX Homework</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+    <div class="calculator">
+      <div class="resultInputs">
+        <input class="summary" readonly >
+        <input class="total" type="number" readonly>
+      </div>
+      <div>
+        <table>
+          <tr class="operator">
+            <td><button class="btn operator" type="submit" onclick="calculate('+')">+</td>
+            <td><button class="btn operator" type="submit" onclick="calculate('-')">-</td>
+            <td><button class="btn operator" type="submit" onclick="calculate('*')">×</td>
+            <td><button class="btn operator" type="submit" onclick="calculate('/')">÷</td>
+          </tr>
+          <tr class="wbg">
+            <td><button class="btn" type="submit" onclick="calculate('7')">7</td>
+            <td><button class="btn" type="submit" onclick="calculate('8')">8</td>
+            <td><button class="btn" type="submit" onclick="calculate('9')">9</td>
+            <td><button class="btn" type="submit" onclick="addToMemory()">M+</td>
+          </tr>
+          <tr>
+            <td><button class="btn" type="submit" onclick="calculate('4')">4</td>
+            <td><button class="btn" type="submit" onclick="calculate('5')">5</td>
+            <td><button class="btn" type="submit" onclick="calculate('6')">6</td>
+            <td><button class="btn" type="submit" onclick="clearMemory()">MC</td>
+          </tr>
+          <tr>
+            <td><button class="btn" type="submit" value="1" onclick="calculate('1')">1</td>
+            <td><button class="btn" type="submit" value="2" onclick="calculate('2')">2</td>
+            <td><button class="btn" type="submit" value="3" onclick="calculate('3')">3</td>
+            <td rowspan="2" сlass="equal"><button class="btn equal" type="submit" value="=" onclick="calculateResult()">=</td>
+          </tr>
+          <tr>
+            <td><button class="btn" type="submit" value="." onclick="calculate('.')">.</td>
+            <td><button class="btn" type="submit" value="0" onclick="calculate('0')">0</td>
+            <td><button class="btn" type="submit" value="C"  onclick="clearResult()">C</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="js/jquery-3.4.0.min.js"></script>
+    <script src="js/calc.js"></script>
+  </body>
+</html>
